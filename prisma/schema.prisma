@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now()) @map("created_at")
+  @@map("admins")
+}
+
+model Brand {
+  id          Int       @id @default(autoincrement())
+  brandName   String    @map("brand_name")
+  brandLogo   String?   @map("brand_logo")
+  description String?
+  category    String?
+  createdAt   DateTime  @default(now()) @map("created_at")
+  products    Product[]
+  @@map("brands")
+}
+
+model Product {
+  id           Int         @id @default(autoincrement())
+  productName  String      @map("product_name")
+  brandId      Int         @map("brand_id")
+  category     String
+  image        String?
+  images       String?     
+  description  String?     
+  features     String?     
+  specs        String?     
+  createdAt    DateTime    @default(now()) @map("created_at")
+  brand        Brand       @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  inquiries    Inquiry[]
+  @@map("products")
+}
+
+model ColorShade {
+  id        Int      @id @default(autoincrement())
+  name      String
+  hex       String
+  family    String
+  createdAt DateTime @default(now()) @map("created_at")
+  @@map("color_shades")
+}
+
+model ContractorApplication {
+  id           Int      @id @default(autoincrement())
+  name         String
+  businessName String?  @map("business_name")
+  phone        String
+  email        String?
+  city         String?
+  workType     String?  @map("work_type")
+  message      String?
+  status       String   @default("new")
+  createdAt    DateTime @default(now()) @map("created_at")
+  @@map("contractor_applications")
+}
+
+model Offer {
+  id          Int       @id @default(autoincrement())
+  title       String
+  description String?
+  discount    String?
+  code        String?
+  image       String?
+  active      Boolean   @default(true)
+  startDate   DateTime? @map("start_date")
+  endDate     DateTime? @map("end_date")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  @@map("offers")
+}
+
+model Inquiry {
+  id           Int      @id @default(autoincrement())
+  customerName String   @map("customer_name")
+  phone        String
+  email        String?
+  message      String?  
+  productId    Int?     @map("product_id")
+  status       String   @default("new")
+  createdAt    DateTime @default(now()) @map("created_at")
+  product      Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  @@map("inquiries")
+}
