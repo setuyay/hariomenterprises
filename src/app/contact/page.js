@@ -12,9 +12,9 @@ export default function Contact() {
     <>
       <Navbar/>
       <FloatingActions/>
-      <section className="max-w-7xl mx-auto px-5 pt-36 pb-20">
+      <section className="shell pt-36 pb-20">
         <div className="kicker mono"><span className="l"></span>Get in touch</div>
-        <h1 className="font-display text-5xl mb-3">Contact Us</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Contact Us</h1>
         <p className="text-cream/60 max-w-xl mb-10">Reach us by phone, WhatsApp or email — or visit either of our two branches in Mandla.</p>
 
         <div className="grid lg:grid-cols-2 gap-10 mb-16">

@@ -1,0 +1,374 @@
+[
+  {
+    "id": 528,
+    "productName": "Kamoshield Exterior",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 529,
+    "productName": "Star Exterior Emulsion",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 540,
+    "productName": "AquaFresh PU Exterior",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 543,
+    "productName": "Campus Exterior",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 509,
+    "productName": "Excel Anti-Peel",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 539,
+    "productName": "AquaFresh PU Interior",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 505,
+    "productName": "Beauty Acrylic Distemper",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 510,
+    "productName": "Suraksha / Suraksha Plus",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 511,
+    "productName": "Suraksha Dust Resist",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 526,
+    "productName": "Weather Supreme",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 520,
+    "productName": "Kamodual Gold",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 504,
+    "productName": "Little Master",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 502,
+    "productName": "Beauty Sheen",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 503,
+    "productName": "Beauty Smooth Finish",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 498,
+    "productName": "Impressions Ideaz",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 519,
+    "productName": "Velvety Luxury Emulsion",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 523,
+    "productName": "Lotus Touch Interior",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 522,
+    "productName": "Metallic Lustre",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 500,
+    "productName": "Pearls Emulsion",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 524,
+    "productName": "Star Interior Emulsion",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 531,
+    "productName": "Kamoprime Exterior",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 537,
+    "productName": "Stainers & Colourants",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 545,
+    "productName": "Specta PU Enamel",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 532,
+    "productName": "Synthetic / GP Enamel",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 513,
+    "productName": "Synthetic Hi-Gloss Enamel",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 552,
+    "productName": "EezeeWood 1K PU",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 533,
+    "productName": "PU Wood Finish",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 536,
+    "productName": "Wall Putty",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 518,
+    "productName": "Wall Putty & Primers",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 516,
+    "productName": "Perma Waterproofing",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 495,
+    "productName": "Impressions 24 Carat",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 507,
+    "productName": "Excel Everlast",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 496,
+    "productName": "Impressions Ultra HD",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 506,
+    "productName": "Excel Total All-in-One",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 527,
+    "productName": "Weather Classic",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 525,
+    "productName": "Acrylic Distemper",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 521,
+    "productName": "Renaissance Designer",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 517,
+    "productName": "Excel Rain Guard",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 530,
+    "productName": "Cement Primer",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 544,
+    "productName": "Acrylic Superfine",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 535,
+    "productName": "Dampguard",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 548,
+    "productName": "WoodCoat",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 538,
+    "productName": "RUCA Super Luxury",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 556,
+    "productName": "Wall & Wood Primers",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 554,
+    "productName": "CoolRoof Terrace",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 555,
+    "productName": "Floor & Concrete PU",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 553,
+    "productName": "Melamine Wood Finish",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 508,
+    "productName": "Excel Mica Marble",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 551,
+    "productName": "TreatWood",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 514,
+    "productName": "Wonderwood 2K PU",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 515,
+    "productName": "Wonderwood Melamine",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 549,
+    "productName": "WoodCoat Italia",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 541,
+    "productName": "Altura 2-in-1",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 501,
+    "productName": "Beauty Gold Washable+",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 497,
+    "productName": "Impressions Kashmir",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 499,
+    "productName": "Pearls Lustre Finish",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 542,
+    "productName": "Visa Interior Emulsion",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 534,
+    "productName": "Aluminium Paint",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 512,
+    "productName": "Impressions Water Enamel",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 546,
+    "productName": "MetalCoat PU",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 547,
+    "productName": "Durothane",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  },
+  {
+    "id": 550,
+    "productName": "FreshWood",
+    "image": "/uploads/sample-product.svg",
+    "images": "[\"/uploads/sample-product.svg\"]"
+  }
+]

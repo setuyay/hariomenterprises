@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-night text-white/70 mt-24">
-      <div className="max-w-7xl mx-auto px-5 py-16 grid md:grid-cols-3 gap-10">
+      <div className="shell py-16 grid md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-display text-2xl text-white">Hariom <span className="text-sun">Enterprises</span></h3>
           <p className="mt-3 text-sm leading-relaxed text-white/60">Authorized dealer of Nerolac, MRF Paints &amp; Kamdhenu. {SITE.tagline}.</p>

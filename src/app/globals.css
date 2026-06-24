@@ -22,6 +22,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body), sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* safety net: never allow horizontal scroll on small screens */
 }
 
 ::selection { background: var(--sun); color: var(--ink); }
@@ -81,3 +82,25 @@ body {
 /* Float (hero accent) */
 .floaty { animation: floaty 3.4s ease-in-out infinite; }
 @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+/* ============ Responsive layout system ============ */
+
+/* Fluid site container — full width, caps at 1600px, fluid side gutters.
+   No fixed inner widths; gutters grow with the viewport. */
+.shell {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+}
+
+/* Fluid hero headline — scales smoothly from mobile up to ultra-wide. */
+.fluid-hero { font-size: clamp(1.75rem, 1.1rem + 2.4vw, 3.5rem); line-height: 1.1; }
+
+/* Scale typography + spacing proportionally on large monitors.
+   Tailwind's spacing/sizing scale is rem-based, so nudging the root
+   font-size scales the whole UI together across 24" → 27" → 32".
+   Breakpoints are px-based and stay unaffected. */
+@media (min-width: 1600px) { html { font-size: 17px; } }
+@media (min-width: 1920px) { html { font-size: 18px; } }
+@media (min-width: 2560px) { html { font-size: 19.5px; } }

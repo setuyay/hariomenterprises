@@ -14,9 +14,9 @@ export default function ColoursPage() {
     <>
       <Navbar/>
       <FloatingActions/>
-      <section className="max-w-7xl mx-auto px-5 pt-36 pb-20">
+      <section className="shell pt-36 pb-20">
         <p className="text-gold tracking-[0.3em] uppercase text-xs mb-3">Colour Palettes</p>
-        <h1 className="font-display text-5xl mb-4">Find Your Perfect Shade</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-4">Find Your Perfect Shade</h1>
         <p className="text-cream/60 max-w-xl mb-10">Browse over 2,000 curated colours. Search by name or hex, filter by family, and tap any shade to enquire.</p>
         <ColoursClient/>
       </section>

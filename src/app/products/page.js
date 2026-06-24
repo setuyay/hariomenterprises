@@ -19,9 +19,9 @@ export default async function ProductsPage() {
     <>
       <Navbar/>
       <FloatingActions/>
-      <section className="max-w-7xl mx-auto px-5 pt-36 pb-20">
+      <section className="shell pt-36 pb-20">
         <p className="text-gold tracking-[0.3em] uppercase text-xs mb-3">Catalog</p>
-        <h1 className="font-display text-5xl mb-10">Our Products</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-10">Our Products</h1>
         <Suspense fallback={<p className="text-cream/40">Loading...</p>}>
           <ProductsClient brands={brands} categories={CATEGORIES}/>
         </Suspense>

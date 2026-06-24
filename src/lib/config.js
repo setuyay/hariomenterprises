@@ -21,7 +21,7 @@ export const BRANCHES = [
     address: 'Heera Colony, Near Ashirwad Hotel, Katra Jabalpur Road, Mandla Road, Mandla – 481661, Madhya Pradesh',
     phone: '+919630717173',
     whatsapp: '919630717173',
-    hours: 'Mon–Sat · 9:00 AM – 8:30 PM',
+    hours: '10:00 AM – 8:00 PM · Friday Off',
     coords: '22.625118349303794,80.36633211127504',
   },
   {
@@ -30,7 +30,7 @@ export const BRANCHES = [
     address: 'Binjhiya Teraha, in front of Mahesh Medical, Mandla, Madhya Pradesh',
     phone: '+917974545900',
     whatsapp: '917974545900',
-    hours: 'Mon–Sat · 9:00 AM – 8:30 PM',
+    hours: '10:00 AM – 8:00 PM · Friday Off',
     coords: '22.608972,80.370028',
   },
 ];

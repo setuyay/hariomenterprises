@@ -21,9 +21,9 @@ export default function ContractorPage() {
     <>
       <Navbar/>
       <FloatingActions/>
-      <section className="max-w-7xl mx-auto px-5 pt-36 pb-20">
+      <section className="shell pt-36 pb-20">
         <div className="kicker mono"><span className="l"></span>For the trade</div>
-        <h1 className="font-display text-5xl mb-4 max-w-2xl">Open a contractor account.</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-4 max-w-2xl">Open a contractor account.</h1>
         <p className="text-cream/60 max-w-xl mb-12">Painters, builders and designers — get the best rates, priority delivery and dedicated support. Apply below and our team will set you up within one business day.</p>
 
         <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10 items-start">

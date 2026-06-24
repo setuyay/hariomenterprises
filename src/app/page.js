@@ -36,7 +36,7 @@ const TICKER = ['Nerolac', 'MRF Paints', 'Kamdhenu', '2,000+ Shades', 'Interior'
 const SERVICES = [
   [HomeIcon, 'Interior Painting', 'Walls, ceilings and rooms finished flawlessly with premium emulsions.'],
   [Building2, 'Exterior Painting', 'Weatherproof exterior coats that protect and beautify your facade.'],
-  [Droplets, 'Waterproofing', 'Terraces, walls and wet areas sealed against leaks and damp.'],
+  [Droplets, 'Waterproofing', 'Terraces, walls and wet areas sealed against leaks and damp.', '/waterproofing'],
   [Layers, 'Texture & Designer Finishes', 'Statement walls with textures, metallics and designer effects.'],
   [Hammer, 'Wood & Metal Polishing', 'PU, melamine and enamel finishes for furniture, doors and grills.'],
   [Ruler, 'Free Site Consultation', 'Free site visit, shade matching and a clear estimate before you start.'],
@@ -49,6 +49,17 @@ const TOOLS = [
   [Layers, 'Putty & Fillers', 'Wall putty, fillers and crack-fill compounds.'],
   [Brush, 'Sandpaper & Abrasives', 'Sheets, blocks and abrasives for surface prep.'],
   [Wrench, 'Masking & Sundries', 'Masking tape, sheets, scrapers and sundries.'],
+];
+
+const GALLERY = [
+  ['https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&q=70&auto=format&fit=crop', 'Living Room'],
+  ['https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=70&auto=format&fit=crop', 'Modern Interior'],
+  ['https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=70&auto=format&fit=crop', 'Minimal Bedroom'],
+  ['https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=70&auto=format&fit=crop', 'Cozy Lounge'],
+  ['https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&q=70&auto=format&fit=crop', 'Bright Living'],
+  ['https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=70&auto=format&fit=crop', 'Accent Wall'],
+  ['https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=70&auto=format&fit=crop', 'Dining Space'],
+  ['https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=70&auto=format&fit=crop', 'Designer Room'],
 ];
 
 export default async function Home() {
@@ -71,7 +82,7 @@ export default async function Home() {
 
       {/* STAT BAND */}
       <section className="bg-night text-white py-14">
-        <div className="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+        <div className="shell grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
           {STATS.map((s, i) => (
             <div key={i}>
               <b className="font-display text-3xl md:text-4xl text-sun block leading-none">{s.value}</b>
@@ -83,7 +94,7 @@ export default async function Home() {
 
       {/* OFFERS */}
       {offers.length > 0 && (
-        <section id="offers" className="max-w-7xl mx-auto px-5 py-20">
+        <section id="offers" className="shell py-20">
           <div className="kicker mono"><span className="l"></span>Limited-time offers</div>
           <div className="flex items-end justify-between gap-4 flex-wrap mb-10">
             <h2 className="font-display text-4xl flex items-center gap-3"><Gift className="text-gold" size={32}/> Current offers &amp; deals</h2>
@@ -110,7 +121,7 @@ export default async function Home() {
       )}
 
       {/* BRANDS */}
-      <section className="max-w-7xl mx-auto px-5 py-20">
+      <section className="shell py-20">
         <div className="kicker mono"><span className="l"></span>Authorized dealer</div>
         <h2 className="font-display text-4xl mb-10">Trusted names we carry</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -125,7 +136,7 @@ export default async function Home() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="max-w-7xl mx-auto px-5 pb-4">
+      <section className="shell pb-4">
         <div className="kicker mono"><span className="l"></span>Categories</div>
         <h2 className="font-display text-4xl mb-10">Shop by type</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -140,7 +151,7 @@ export default async function Home() {
       </section>
 
       {/* FEATURED PRODUCTS */}
-      <section className="max-w-7xl mx-auto px-5 py-20">
+      <section className="shell py-20">
         <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
           <div>
             <div className="kicker mono"><span className="l"></span>The catalogue</div>
@@ -154,26 +165,34 @@ export default async function Home() {
       </section>
 
       {/* PAINTING SERVICES */}
-      <section id="services" className="max-w-7xl mx-auto px-5 py-20">
+      <section id="services" className="shell py-20">
         <div className="kicker mono"><span className="l"></span>Painting services</div>
         <div className="flex items-end justify-between gap-4 flex-wrap mb-10">
           <h2 className="font-display text-4xl">We don’t just sell paint — we get it done.</h2>
           <a href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Hi Hariom Enterprises, I need a painting service quote.')}`} target="_blank" rel="noreferrer" className="btn-gold px-6 py-2.5 rounded-full text-sm font-semibold">Book a free site visit</a>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SERVICES.map(([Icon, t, d], i) => (
-            <div key={i} className="glass rounded-2xl p-6 hover:-translate-y-1 transition-transform">
-              <span className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#f4ecdd] text-gold mb-4"><Icon size={22}/></span>
-              <h3 className="font-display text-xl mb-1">{t}</h3>
-              <p className="text-cream/65 text-sm leading-relaxed">{d}</p>
-            </div>
-          ))}
+          {SERVICES.map(([Icon, t, d, href], i) => {
+            const inner = (
+              <>
+                <span className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#f4ecdd] text-gold mb-4"><Icon size={22}/></span>
+                <h3 className="font-display text-xl mb-1">{t}</h3>
+                <p className="text-cream/65 text-sm leading-relaxed">{d}</p>
+                {href && <span className="inline-flex items-center gap-1 text-gold text-sm font-semibold mt-3">Learn more →</span>}
+              </>
+            );
+            return href ? (
+              <Link key={i} href={href} className="glass rounded-2xl p-6 hover:-translate-y-1 transition-transform block">{inner}</Link>
+            ) : (
+              <div key={i} className="glass rounded-2xl p-6 hover:-translate-y-1 transition-transform">{inner}</div>
+            );
+          })}
         </div>
       </section>
 
       {/* PAINTING TOOLS */}
       <section id="tools" className="bg-[#f4ecdd] py-20">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="shell">
           <div className="kicker mono"><span className="l"></span>Painting tools & accessories</div>
           <h2 className="font-display text-4xl mb-3">Everything you need to paint.</h2>
           <p className="text-cream/60 max-w-xl mb-10">Brushes, rollers, putties, abrasives and sundries — all in stock alongside our paints.</p>
@@ -194,7 +213,7 @@ export default async function Home() {
 
       {/* WHY */}
       <section className="bg-[#f4ecdd] py-20">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="shell">
           <div className="kicker mono"><span className="l"></span>Why Hariom Enterprises</div>
           <h2 className="font-display text-4xl mb-12">A name your neighbourhood paints with.</h2>
           <div className="grid md:grid-cols-4 gap-6">
@@ -212,8 +231,28 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* DESIGN INSPIRATION GALLERY */}
+      <section className="shell py-20">
+        <div className="flex items-end justify-between gap-4 flex-wrap mb-10">
+          <div>
+            <div className="kicker mono"><span className="l"></span>Design inspiration</div>
+            <h2 className="font-display text-4xl">Spaces brought to life with colour.</h2>
+          </div>
+          <Link href="/visualizer" className="text-gold font-semibold border-b-2 border-gold/40 pb-1 hover:border-gold">Try the visualizer →</Link>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {GALLERY.map(([src, label], i) => (
+            <div key={i} className="group relative overflow-hidden rounded-2xl aspect-[4/5]">
+              <img src={src} alt={label} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+              <div className="absolute inset-0 bg-gradient-to-t from-night/75 via-night/10 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"/>
+              <span className="absolute bottom-3 left-4 right-4 text-white font-display text-lg leading-tight">{label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* REVIEWS */}
-      <section className="max-w-7xl mx-auto px-5 py-20">
+      <section className="shell py-20">
         <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
           <div>
             <div className="kicker mono"><span className="l"></span>Customer love · Mandla</div>
@@ -243,7 +282,7 @@ export default async function Home() {
       </section>
 
       {/* BRANCHES */}
-      <section id="visit" className="max-w-7xl mx-auto px-5 py-10">
+      <section id="visit" className="shell py-10">
         <div className="kicker mono"><span className="l"></span>Come say hello</div>
         <h2 className="font-display text-4xl mb-3">Our branches.</h2>
         <p className="text-cream/60 max-w-xl mb-8">Two locations to serve you better. Call, message on WhatsApp, or get directions to the branch nearest you.</p>
@@ -282,7 +321,7 @@ export default async function Home() {
       </section>
 
       {/* TOOLS */}
-      <section className="max-w-7xl mx-auto px-5 py-20">
+      <section className="shell py-20">
         <div className="kicker mono"><span className="l"></span>Helpful tools</div>
         <h2 className="font-display text-4xl mb-10">Plan your project</h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -299,7 +338,7 @@ export default async function Home() {
       </section>
 
       {/* ADMIN ACCESS */}
-      <div className="max-w-7xl mx-auto px-5 pb-12 text-center">
+      <div className="shell pb-12 text-center">
         <Link href="/admin/login" className="btn-ghost inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold">
           <Lock size={15}/> Admin Login
         </Link>

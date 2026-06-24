@@ -45,12 +45,12 @@ export default async function ProductDetail({ params }) {
       <Navbar/>
       <FloatingActions productName={p.productName}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
-      <section className="max-w-7xl mx-auto px-5 pt-36 pb-20">
+      <section className="shell pt-36 pb-20">
         <div className="grid lg:grid-cols-2 gap-12">
           <Gallery images={images} name={p.productName}/>
           <div>
             <p className="text-gold tracking-[0.3em] uppercase text-xs">{p.brand.brandName} · {p.category}</p>
-            <h1 className="font-display text-5xl mt-3">{p.productName}</h1>
+            <h1 className="font-display text-4xl md:text-5xl mt-3">{p.productName}</h1>
             <p className="text-cream/70 mt-5 leading-relaxed">{p.description}</p>
 
             {features.length>0 && (

@@ -66,6 +66,16 @@ model ContractorApplication {
   @@map("contractor_applications")
 }
 
+model ContractorRequest {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String
+  address   String
+  status    String   @default("new")
+  createdAt DateTime @default(now()) @map("created_at")
+  @@map("contractor_requests")
+}
+
 model Offer {
   id          Int       @id @default(autoincrement())
   title       String
@@ -78,6 +88,36 @@ model Offer {
   endDate     DateTime? @map("end_date")
   createdAt   DateTime  @default(now()) @map("created_at")
   @@map("offers")
+}
+
+model WarrantyRegistration {
+  id                Int       @id @default(autoincrement())
+  warrantyId        String    @unique @map("warranty_id")
+  customerName      String    @map("customer_name")
+  mobile            String
+  email             String
+  address           String
+  city              String
+  district          String
+  pincode           String
+  brandName         String    @map("brand_name")
+  productName       String    @map("product_name")
+  shadeName         String?   @map("shade_name")
+  batchNumber       String?   @map("batch_number")
+  purchaseDate      DateTime  @map("purchase_date")
+  quantityPurchased String?   @map("quantity_purchased")
+  invoiceNumber     String?   @map("invoice_number")
+  propertyType      String?   @map("property_type")
+  paintedArea       String?   @map("painted_area")
+  contractorName    String?   @map("contractor_name")
+  applicationDate   DateTime? @map("application_date")
+  invoiceFile       String    @map("invoice_file")
+  productPhoto      String?   @map("product_photo")
+  wallPhoto         String?   @map("wall_photo")
+  status            String    @default("Pending")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+  @@map("warranty_registrations")
 }
 
 model Inquiry {

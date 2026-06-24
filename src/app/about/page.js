@@ -12,7 +12,7 @@ export default function About() {
       <FloatingActions/>
       <section className="max-w-4xl mx-auto px-5 pt-36 pb-20">
         <p className="text-gold tracking-[0.3em] uppercase text-xs mb-3">Our Story</p>
-        <h1 className="font-display text-5xl mb-8">About Hariom Enterprises</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-8">About Hariom Enterprises</h1>
         <p className="text-cream/70 leading-relaxed text-lg">
           For years, Hariom Enterprises has been a trusted destination for homeowners, designers and contractors seeking the finest paints and coatings. As an authorized dealer of India's leading paint brands, we combine premium products with expert guidance to help bring every vision to life.
         </p>
