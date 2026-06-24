@@ -2,7 +2,7 @@
 
 A complete, production-ready dynamic paint shop website with admin panel and database.
 
-**Stack:** Next.js 15 (App Router) · React 19 · Tailwind CSS · Node.js API routes · MySQL · Prisma ORM · JWT (jose) auth.
+**Stack:** Next.js 15 (App Router) · React 19 · Tailwind CSS · Node.js API routes · PostgreSQL · Prisma ORM · JWT (jose) auth.
 
 ## Features
 
@@ -23,7 +23,7 @@ A complete, production-ready dynamic paint shop website with admin panel and dat
 - Brands: add / edit / delete with logo upload
 - Inquiry management with status (new/contacted/closed) and delete
 
-## Database Schema (Prisma → MySQL)
+## Database Schema (Prisma → PostgreSQL)
 - `brands` (id, brand_name, brand_logo, description, created_at)
 - `products` (id, product_name, brand_id, category, image, images, description, features, specs, created_at)
 - `inquiries` (id, customer_name, phone, email, message, product_id, status, created_at)
@@ -36,14 +36,14 @@ A complete, production-ready dynamic paint shop website with admin panel and dat
    npm install
    ```
 
-2. **Create the database** in MySQL:
+2. **Create the database** in PostgreSQL:
    ```sql
    CREATE DATABASE hariom_paints;
    ```
 
 3. **Configure environment** — copy `.env.example` to `.env` and edit:
    ```
-   DATABASE_URL="mysql://USER:PASSWORD@localhost:3306/hariom_paints"
+   DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/hariom_paints?schema=public"
    JWT_SECRET="a-long-random-secret"
    NEXT_PUBLIC_SITE_URL="http://localhost:3000"
    NEXT_PUBLIC_WHATSAPP="91XXXXXXXXXX"      # digits only, with country code
@@ -59,18 +59,6 @@ A complete, production-ready dynamic paint shop website with admin panel and dat
    ```
    Seed creates an admin and sample brands/products.
 
-5. **Run**
-   ```bash
-   npm run dev
-   ```
-   - Site: http://localhost:3000
-   - Admin: http://localhost:3000/admin/login
-
-## Default Admin Login
-- **Email:** admin@hariomenterprises.com
-- **Password:** admin123
-> Change this immediately. Create a new admin with a bcrypt-hashed password, or edit the seed and re-run.
-
 ## Image Uploads
 Uploaded images are stored in `public/uploads/`. For production on serverless hosts (e.g. Vercel) the filesystem is read-only/ephemeral — switch the `/api/upload` route to a storage provider (AWS S3, Cloudflare R2, Cloudinary, etc.). On a VPS the local folder works as-is.
 
@@ -83,14 +71,14 @@ npm start
 ## Deployment
 
 ### Option A — VPS (full features incl. local uploads)
-1. Install Node 18+, MySQL.
+1. Install Node 18+, PostgreSQL.
 2. Clone repo, set `.env`, run `npm install`.
 3. `npx prisma db push && npm run db:seed`
 4. `npm run build`
 5. Run with PM2: `pm2 start npm --name hariom -- start`
 6. Put Nginx in front as a reverse proxy to port 3000 and add SSL (Certbot).
 
-### Option B — Vercel + managed MySQL (PlanetScale / Railway / Aiven)
+### Option B — Vercel + managed PostgreSQL (Neon / Supabase / Railway / Aiven)
 1. Push to GitHub, import into Vercel.
 2. Add env vars in Vercel project settings.
 3. Set build command to `prisma generate && next build`.
