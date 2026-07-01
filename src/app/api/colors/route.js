@@ -6,12 +6,17 @@ export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const q = (searchParams.get('q') || '').trim();
   const family = searchParams.get('family') || '';
+  const brand = searchParams.get('brand') || '';
   const page = Math.max(1, parseInt(searchParams.get('page') || '1', 10));
   const pageSize = Math.min(120, Math.max(1, parseInt(searchParams.get('pageSize') || '60', 10)));
 
   const where = {};
+  if (brand) where.brand = brand;
   if (family && family !== 'All') where.family = family;
   if (q) where.OR = [{ name: { contains: q, mode: 'insensitive' } }, { hex: { contains: q, mode: 'insensitive' } }];
+
+  // family counts respect the brand scope (but not the search/family filter)
+  const familyWhere = brand ? { brand } : {};
 
   const [items, total, grouped] = await Promise.all([
     prisma.colorShade.findMany({
@@ -21,7 +26,7 @@ export async function GET(req) {
       take: pageSize,
     }),
     prisma.colorShade.count({ where }),
-    prisma.colorShade.groupBy({ by: ['family'], _count: { _all: true } }),
+    prisma.colorShade.groupBy({ by: ['family'], where: familyWhere, _count: { _all: true } }),
   ]);
 
   const families = grouped

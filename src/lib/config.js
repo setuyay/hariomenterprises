@@ -9,10 +9,19 @@ export const SITE = {
   mapEmbed: 'https://maps.google.com/maps?q=22.625118349303794,80.36633211127504&z=16&output=embed',
 };
 
-export const CATEGORIES = ['Interior', 'Exterior', 'Wood Finish', 'Metal & Enamel', 'Waterproofing', 'Primer'];
+export const CATEGORIES = ['Interior', 'Exterior', 'Wood Coatings', 'Metal Paints', 'Enamels', 'Primers', 'Putty', 'Waterproofing'];
 
 // Brand accent colours
 export const BRAND_COLORS = { 'Nerolac Paints': '#e8472b', 'Kamdhenu Paints': '#159e54', 'MRF Paints': '#0a5ad6' };
+
+// Multi-brand registry (slug ↔ full name ↔ badge ↔ accent)
+export const BRANDS = [
+  { slug: 'nerolac', name: 'Nerolac Paints', short: 'NEROLAC', color: '#e8472b' },
+  { slug: 'kamdhenu', name: 'Kamdhenu Paints', short: 'KAMDHENU', color: '#159e54' },
+  { slug: 'mrf', name: 'MRF Paints', short: 'MRF', color: '#0a5ad6' },
+];
+export const brandBySlug = (slug) => BRANDS.find((b) => b.slug === slug);
+export const brandByName = (name) => BRANDS.find((b) => b.name === name);
 
 export const BRANCHES = [
   {

@@ -1,6 +1,7 @@
 import './globals.css';
 import { Bricolage_Grotesque, Inter_Tight } from 'next/font/google';
 import { SITE } from '@/lib/config';
+import CinematicIntro from '@/components/intro/CinematicIntro';
 
 const display = Bricolage_Grotesque({ subsets: ['latin'], weight: ['500','700','800'], variable: '--font-display' });
 const body = Inter_Tight({ subsets: ['latin'], weight: ['400','500','600'], variable: '--font-body' });
@@ -21,7 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
-      <body className="grain" suppressHydrationWarning>{children}</body>
+      <body className="grain" suppressHydrationWarning>
+        {children}
+        <CinematicIntro />
+      </body>
     </html>
   );
 }

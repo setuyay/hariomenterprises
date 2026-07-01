@@ -1,0 +1,312 @@
+[
+  {
+    "id": 543,
+    "productName": "Campus Exterior",
+    "category": "Exterior"
+  },
+  {
+    "id": 528,
+    "productName": "Kamoshield Exterior",
+    "category": "Exterior"
+  },
+  {
+    "id": 529,
+    "productName": "Star Exterior Emulsion",
+    "category": "Exterior"
+  },
+  {
+    "id": 511,
+    "productName": "Suraksha Dust Resist",
+    "category": "Exterior"
+  },
+  {
+    "id": 539,
+    "productName": "AquaFresh PU Interior",
+    "category": "Interior"
+  },
+  {
+    "id": 505,
+    "productName": "Beauty Acrylic Distemper",
+    "category": "Interior"
+  },
+  {
+    "id": 508,
+    "productName": "Excel Mica Marble",
+    "category": "Exterior"
+  },
+  {
+    "id": 504,
+    "productName": "Little Master",
+    "category": "Interior"
+  },
+  {
+    "id": 498,
+    "productName": "Impressions Ideaz",
+    "category": "Interior"
+  },
+  {
+    "id": 523,
+    "productName": "Lotus Touch Interior",
+    "category": "Interior"
+  },
+  {
+    "id": 522,
+    "productName": "Metallic Lustre",
+    "category": "Interior"
+  },
+  {
+    "id": 524,
+    "productName": "Star Interior Emulsion",
+    "category": "Interior"
+  },
+  {
+    "id": 532,
+    "productName": "Synthetic / GP Enamel",
+    "category": "Metal & Enamel"
+  },
+  {
+    "id": 531,
+    "productName": "Kamoprime Exterior",
+    "category": "Primer"
+  },
+  {
+    "id": 537,
+    "productName": "Stainers & Colourants",
+    "category": "Primer"
+  },
+  {
+    "id": 518,
+    "productName": "Wall Putty & Primers",
+    "category": "Primer"
+  },
+  {
+    "id": 552,
+    "productName": "EezeeWood 1K PU",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 533,
+    "productName": "PU Wood Finish",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 496,
+    "productName": "Impressions Ultra HD",
+    "category": "Interior"
+  },
+  {
+    "id": 540,
+    "productName": "AquaFresh PU Exterior",
+    "category": "Exterior"
+  },
+  {
+    "id": 506,
+    "productName": "Excel Total All-in-One",
+    "category": "Exterior"
+  },
+  {
+    "id": 509,
+    "productName": "Excel Anti-Peel",
+    "category": "Exterior"
+  },
+  {
+    "id": 525,
+    "productName": "Acrylic Distemper",
+    "category": "Interior"
+  },
+  {
+    "id": 517,
+    "productName": "Excel Rain Guard",
+    "category": "Waterproofing"
+  },
+  {
+    "id": 538,
+    "productName": "RUCA Super Luxury",
+    "category": "Interior"
+  },
+  {
+    "id": 535,
+    "productName": "Dampguard",
+    "category": "Waterproofing"
+  },
+  {
+    "id": 548,
+    "productName": "WoodCoat",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 507,
+    "productName": "Excel Everlast",
+    "category": "Exterior"
+  },
+  {
+    "id": 554,
+    "productName": "CoolRoof Terrace",
+    "category": "Waterproofing"
+  },
+  {
+    "id": 555,
+    "productName": "Floor & Concrete PU",
+    "category": "Waterproofing"
+  },
+  {
+    "id": 553,
+    "productName": "Melamine Wood Finish",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 551,
+    "productName": "TreatWood",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 515,
+    "productName": "Wonderwood Melamine",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 549,
+    "productName": "WoodCoat Italia",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 501,
+    "productName": "Beauty Gold Washable+",
+    "category": "Interior"
+  },
+  {
+    "id": 499,
+    "productName": "Pearls Lustre Finish",
+    "category": "Interior"
+  },
+  {
+    "id": 542,
+    "productName": "Visa Interior Emulsion",
+    "category": "Interior"
+  },
+  {
+    "id": 512,
+    "productName": "Impressions Water Enamel",
+    "category": "Metal & Enamel"
+  },
+  {
+    "id": 546,
+    "productName": "MetalCoat PU",
+    "category": "Metal & Enamel"
+  },
+  {
+    "id": 547,
+    "productName": "Durothane",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 550,
+    "productName": "FreshWood",
+    "category": "Wood Finish"
+  },
+  {
+    "id": 510,
+    "productName": "Suraksha / Suraksha Plus",
+    "category": "Exterior"
+  },
+  {
+    "id": 527,
+    "productName": "Weather Classic",
+    "category": "Exterior"
+  },
+  {
+    "id": 526,
+    "productName": "Weather Supreme",
+    "category": "Exterior"
+  },
+  {
+    "id": 544,
+    "productName": "Acrylic Superfine",
+    "category": "Interior"
+  },
+  {
+    "id": 541,
+    "productName": "Altura 2-in-1",
+    "category": "Interior"
+  },
+  {
+    "id": 502,
+    "productName": "Beauty Sheen",
+    "category": "Interior"
+  },
+  {
+    "id": 503,
+    "productName": "Beauty Smooth Finish",
+    "category": "Interior"
+  },
+  {
+    "id": 495,
+    "productName": "Impressions 24 Carat",
+    "category": "Interior"
+  },
+  {
+    "id": 497,
+    "productName": "Impressions Kashmir",
+    "category": "Interior"
+  },
+  {
+    "id": 520,
+    "productName": "Kamodual Gold",
+    "category": "Interior"
+  },
+  {
+    "id": 500,
+    "productName": "Pearls Emulsion",
+    "category": "Interior"
+  },
+  {
+    "id": 521,
+    "productName": "Renaissance Designer",
+    "category": "Interior"
+  },
+  {
+    "id": 519,
+    "productName": "Velvety Luxury Emulsion",
+    "category": "Interior"
+  },
+  {
+    "id": 534,
+    "productName": "Aluminium Paint",
+    "category": "Metal & Enamel"
+  },
+  {
+    "id": 545,
+    "productName": "Specta PU Enamel",
+    "category": "Metal & Enamel"
+  },
+  {
+    "id": 513,
+    "productName": "Synthetic Hi-Gloss Enamel",
+    "category": "Metal & Enamel"
+  },
+  {
+    "id": 530,
+    "productName": "Cement Primer",
+    "category": "Primer"
+  },
+  {
+    "id": 556,
+    "productName": "Wall & Wood Primers",
+    "category": "Primer"
+  },
+  {
+    "id": 536,
+    "productName": "Wall Putty",
+    "category": "Primer"
+  },
+  {
+    "id": 516,
+    "productName": "Perma Waterproofing",
+    "category": "Waterproofing"
+  },
+  {
+    "id": 514,
+    "productName": "Wonderwood 2K PU",
+    "category": "Wood Finish"
+  }
+]

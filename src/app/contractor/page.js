@@ -10,10 +10,10 @@ export const metadata = {
 };
 
 const PERKS = [
-  [IndianRupee, 'Best bulk rates', 'Special contractor pricing across all three brands.'],
-  [Truck, 'Priority delivery', 'Same-day local delivery on stock items.'],
-  [BadgeCheck, 'Genuine sealed stock', 'Authorized dealer — every tin is authentic.'],
-  [Headphones, 'Dedicated support', 'A direct line for orders, shade matching & estimates.'],
+  [IndianRupee, 'Best Bulk Rates', 'Teeno brands par special contractor pricing.'],
+  [Truck, 'Priority Delivery', 'Stock items par same-day local delivery.'],
+  [BadgeCheck, 'Genuine Sealed Stock', 'Authorized dealer — har tin original aur sealed.'],
+  [Headphones, 'Dedicated Support', 'Orders, shade matching aur estimates ke liye direct line.'],
 ];
 
 export default function ContractorPage() {
@@ -22,9 +22,9 @@ export default function ContractorPage() {
       <Navbar/>
       <FloatingActions/>
       <section className="shell pt-36 pb-20">
-        <div className="kicker mono"><span className="l"></span>For the trade</div>
-        <h1 className="font-display text-4xl md:text-5xl mb-4 max-w-2xl">Open a contractor account.</h1>
-        <p className="text-cream/60 max-w-xl mb-12">Painters, builders and designers — get the best rates, priority delivery and dedicated support. Apply below and our team will set you up within one business day.</p>
+        <div className="kicker mono"><span className="l"></span>Contractors ke liye</div>
+        <h1 className="font-display text-4xl md:text-5xl mb-4 max-w-2xl">Contractor Account kholein.</h1>
+        <p className="text-cream/60 max-w-xl mb-12">Painters, builders aur designers — best rates, priority delivery aur dedicated support paayein. Niche apply karein, hamari team 1 business day me aapko set up kar degi.</p>
 
         <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10 items-start">
           <div className="grid sm:grid-cols-2 gap-5">

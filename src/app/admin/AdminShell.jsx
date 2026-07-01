@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { LayoutDashboard, Package, Tag, Inbox, LogOut, Palette, HardHat, Percent, UserSearch, ShieldCheck } from 'lucide-react';
+import { LayoutDashboard, Package, Tag, Inbox, LogOut, Palette, HardHat, Percent, UserSearch, ShieldCheck, Gift } from 'lucide-react';
 
 export default function AdminShell({ children }) {
   const pathname = usePathname();
@@ -18,6 +18,7 @@ export default function AdminShell({ children }) {
     ['/admin/contractors', 'Contractors', HardHat],
     ['/admin/contractor-requests', 'Contractor Requests', UserSearch],
     ['/admin/warranty', 'Warranty Registrations', ShieldCheck],
+    ['/admin/scratch', 'Scratch & Win', Gift],
   ];
   async function logout() {
     await fetch('/api/auth/logout', { method: 'POST' });
